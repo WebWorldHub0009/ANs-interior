@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap');
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+/* Global font + color tone */
+body {
+  font-family: 'Inter', sans-serif;
+  
+}
+
+/* For headings */
+.font-[Playfair_Display] {
+  font-family: 'Playfair Display', serif;
+}
+
+/* For subtext or medium content */
+.font-[Poppins] {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-out forwards;
+}
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 18s linear infinite;
+}
+ .animate-spin-slow {
+    animation: spin 12s linear infinite;
+  }
