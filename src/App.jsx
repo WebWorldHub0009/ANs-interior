@@ -11,6 +11,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import Video from './pages/Video'
 import Certificates from './pages/Certificates'
 import ServiceDetailPage from './pages/ServiceDetail'
+import FloatingButtons from "./Components/FloatingButtons"
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
       <Route path='/video' element={<Video/>}/>
        <Route path='/certificates' element={<Certificates/>}/>
     </Routes>
+    <FloatingButtons/>
     <Footer/>
     </BrowserRouter>
   )
